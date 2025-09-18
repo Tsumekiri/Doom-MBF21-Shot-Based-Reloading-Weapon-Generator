@@ -16,6 +16,8 @@ If your reloading weapon uses dozens of shots before firing, copying and pasting
 5. The result will both be printed to the console and written to a file called `weapon_result.txt`;
 6. Copy the contents of `weapon_result.txt` into your weapon's DECOHack. Make sure not to have `goto ready` or `A_ReFire` in your weapon's fire state. It also has to be right **before** the `reload` state, so it is called after the last shot.
 
+**DO NOT** overwrite either your `fire` state or your `ready` state. All the content in `weapon_result.txt` is new and should not overwrite anything.
+
 # What's been generated?
 Basically it adds `A_RefireTo` to the beginning of the `ready` states (E.g. `TNT1 A 0 A_RefireTo("fire2")`) and a loop at the end of each state. It also numbers each repetition (E.g. `fire6`) to be "refired" to.
 
