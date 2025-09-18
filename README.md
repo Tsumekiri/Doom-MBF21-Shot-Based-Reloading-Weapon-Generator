@@ -18,3 +18,6 @@ If your reloading weapon uses dozens of shots before firing, copying and pasting
 
 # What's been generated?
 Basically it adds `A_RefireTo` to the beginning of the `ready` states (E.g. `TNT1 A 0 A_RefireTo("fire2")`) and a loop at the end of each state. It also numbers each repetition (E.g. `fire6`) to be "refired" to.
+
+# License
+I'm distributing this script under the MIT license. Do with it as you will! If you have more specific needs, I recommend forking this and making your own edits as needed. I've commented the code in the hopes of making it more readable.
