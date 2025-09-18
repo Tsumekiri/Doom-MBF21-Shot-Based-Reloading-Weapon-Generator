@@ -6,7 +6,7 @@ Be **careful** not to overwrite your weapon. This only copies the repeating `rea
 An example WAD is provided, alongside the appropriate `DECOHack`, `.deh` file, `ready_state.txt` and `fire_state.txt`. It uses sprites and sounds taken from Realm667, the UAC Battle Rifle. Credits to Firearms Source Team, Triune Digital, Navaro for the sounds and Mike12 for the sprites.
 
 # What use is this?
-If your reloading weapon uses dozens of shots before firing, copying and pasting by hand is exhaustive and error-prone. Especially so if all your weapons require reloading. This speeds up the process significantly, allowing you to quickly make a 24-round magazine for your rifle, for instance. Also, if you find any errors and need to fix it, all you have to do is change them once and rerun the script.
+If your reloading weapon uses dozens of shots before firing, copying and pasting by hand is exhaustive and error-prone. Especially so if all your weapons require reloading. This speeds up the process significantly, allowing you to quickly make a 30-round magazine for your rifle, for instance. Also, if you find any errors and need to fix it, all you have to do is change them once and rerun the script.
 
 # How to use
 1. You need to create two files: `ready_state.txt` and `fire_state.txt` on the same folder you have the script located;
