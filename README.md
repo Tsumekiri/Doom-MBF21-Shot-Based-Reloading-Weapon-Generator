@@ -16,7 +16,7 @@ If your reloading weapon uses dozens of shots before reloading, copying and past
 3. Run the script, it uses Python3;
 4. Write the number of shots you want before reloading and press `enter`. E.g. `6`;
 5. The result will both be printed to the console and written to a file called `weapon_result.txt`;
-6. Copy the contents of `weapon_result.txt` into your weapon's DECOHack. Make sure not to have `goto ready` or `A_ReFire` in your weapon's fire state. It also has to be right **before** the `reload` state, so it is called after the last shot.
+6. Copy the contents of `weapon_result.txt` into your weapon's DECOHack. Make sure not to have `goto ready`, `A_ReFire` or `A_WeaponReady` in your weapon's fire state. It also has to be right **before** the `reload` state, so it is called after the last shot.
 
 **DO NOT** overwrite either your `fire` state or your `ready` state. All the content in `weapon_result.txt` is new and should not overwrite anything.
 
