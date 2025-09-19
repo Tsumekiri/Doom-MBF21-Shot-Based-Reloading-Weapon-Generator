@@ -1,16 +1,18 @@
 # Doom DSDHacked MBF21 Shot-Based Reloading Weapon Generator
-Doom DSDHacked MBF21 Shot-Based Reloading Weapon Generator takes your ready and fire states, copies it by the number of shots desired, numbers them and adds a little code to make sure they're called in order. It is based on the reloading method from Terror Signal﻿ by SeaTree.
+Doom DSDHacked MBF21 Shot-Based Reloading Weapon Generator takes your ready and fire states, copies it by the number of shots desired, numbers them and adds a little code to make sure they're called in order. It is based on the reloading method from Terror Signal by SeaTree.
 
 Be **careful** not to overwrite your weapon. This only copies the repeating `ready` and `fire` states. You still have to write the rest yourself, including the states `select`, `deselect`, `ready`, `fire` and finally, `reload`.
 
-An example WAD is provided, alongside the appropriate `DECOHack`, `.deh` file, `ready_state.txt` and `fire_state.txt`. It uses sprites and sounds taken from Realm667, the UAC Battle Rifle. Credits to Firearms Source Team, Triune Digital, Navaro for the sounds and Mike12 for the sprites.
+It is **important** that reload comes after the last shot, so it will be entered automatically once the last shot has been fired.
+
+An example WAD is provided, alongside the appropriate `DECOHack` (it's inside the WAD), `DeHacked` file (also inside the WAD), `ready_state.txt`, `fire_state.txt` and `weapon_result.txt`. It uses sprites and sounds taken from Realm667, the UAC Battle Rifle. Credits to Firearms Source Team, Triune Digital, Navaro for the sounds and Mike12 for the sprites.
 
 # What use is this?
-If your reloading weapon uses dozens of shots before firing, copying and pasting by hand is exhaustive and error-prone. Especially so if all your weapons require reloading. This speeds up the process significantly, allowing you to quickly make a 30-round magazine for your rifle, for instance. Also, if you find any errors and need to fix it, all you have to do is change them once and rerun the script.
+If your reloading weapon uses dozens of shots before firing, copying and pasting by hand is exhaustive and error-prone. Especially so if all your weapons require reloading. This speeds up the process significantly, allowing you to quickly make a 30-round magazine for your rifle, as an example. Also, if you find any errors and need to fix it, all you have to do is change them once, rerun the script and copy-paste.
 
 # How to use
 1. You need to create two files: `ready_state.txt` and `fire_state.txt` on the same folder you have the script located;
-2. Copy the contents of your `ready` state and `fire` state to the respective files;
+2. Copy the contents of your `ready` state and `fire` state to the respective files. Check the attached example, when in doubt;
 3. Run the script, it uses Python3;
 4. Write the number of shots you want before reloading and press `enter`. E.g. `6`;
 5. The result will both be printed to the console and written to a file called `weapon_result.txt`;
