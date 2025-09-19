@@ -1,5 +1,5 @@
 # Doom DSDHacked MBF21 Shot-Based Reloading Weapon Generator
-Doom MBF21 Shot-Based Reloading Weapon Generator takes your ready and fire states, copies it by the number of shots desired, numbers them and adds a little code to make sure they're called in order. It is based on the reloading method from Terror Signal﻿ by SeaTree.
+Doom DSDHacked MBF21 Shot-Based Reloading Weapon Generator takes your ready and fire states, copies it by the number of shots desired, numbers them and adds a little code to make sure they're called in order. It is based on the reloading method from Terror Signal﻿ by SeaTree.
 
 Be **careful** not to overwrite your weapon. This only copies the repeating `ready` and `fire` states. You still have to write the rest yourself, including the states `select`, `deselect`, `ready`, `fire` and finally, `reload`.
 
